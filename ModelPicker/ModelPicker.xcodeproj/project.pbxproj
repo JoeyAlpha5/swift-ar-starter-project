@@ -19,8 +19,6 @@
 		6FB4BD6928FDF82E002B8B5C /* PegasusTrail.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6FB4BD6528FDF82E002B8B5C /* PegasusTrail.usdz */; };
 		6FB4BD6A28FDF82E002B8B5C /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6FB4BD6628FDF82E002B8B5C /* toy_biplane.usdz */; };
 		6FB4BD6B28FDF82E002B8B5C /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6FB4BD6728FDF82E002B8B5C /* teapot.usdz */; };
-		6FB4BD6D28FDF9CA002B8B5C /* Old_Rusty_Car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6FB4BD6C28FDF9C9002B8B5C /* Old_Rusty_Car.usdz */; };
-		6FB4BD6F28FDFA58002B8B5C /* Destroyed_Car_07_Raw_Scan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6FB4BD6E28FDFA58002B8B5C /* Destroyed_Car_07_Raw_Scan.usdz */; };
 		6FB4BD7128FE1176002B8B5C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4BD7028FE1176002B8B5C /* Model.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +55,6 @@
 		6FB4BD6528FDF82E002B8B5C /* PegasusTrail.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = PegasusTrail.usdz; sourceTree = "<group>"; };
 		6FB4BD6628FDF82E002B8B5C /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		6FB4BD6728FDF82E002B8B5C /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
-		6FB4BD6C28FDF9C9002B8B5C /* Old_Rusty_Car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Old_Rusty_Car.usdz; sourceTree = "<group>"; };
-		6FB4BD6E28FDFA58002B8B5C /* Destroyed_Car_07_Raw_Scan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Destroyed_Car_07_Raw_Scan.usdz; sourceTree = "<group>"; };
 		6FB4BD7028FE1176002B8B5C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,8 +145,6 @@
 		6FB4BD6328FDF7EF002B8B5C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6FB4BD6E28FDFA58002B8B5C /* Destroyed_Car_07_Raw_Scan.usdz */,
-				6FB4BD6C28FDF9C9002B8B5C /* Old_Rusty_Car.usdz */,
 				6FB4BD6428FDF82E002B8B5C /* AirForce.usdz */,
 				6FB4BD6528FDF82E002B8B5C /* PegasusTrail.usdz */,
 				6FB4BD6728FDF82E002B8B5C /* teapot.usdz */,
@@ -268,8 +262,6 @@
 				6FB4BD6A28FDF82E002B8B5C /* toy_biplane.usdz in Resources */,
 				6FB4BD6928FDF82E002B8B5C /* PegasusTrail.usdz in Resources */,
 				6FB4BD3E28FDF57B002B8B5C /* Assets.xcassets in Resources */,
-				6FB4BD6F28FDFA58002B8B5C /* Destroyed_Car_07_Raw_Scan.usdz in Resources */,
-				6FB4BD6D28FDF9CA002B8B5C /* Old_Rusty_Car.usdz in Resources */,
 				6FB4BD6828FDF82E002B8B5C /* AirForce.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
