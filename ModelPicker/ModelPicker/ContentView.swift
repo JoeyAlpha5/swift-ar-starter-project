@@ -8,6 +8,8 @@
 import SwiftUI
 import ARKit
 import RealityKit
+//import package
+import FocusEntity
 
 struct ContentView : View {
     @State private var isPlacementEnabled = false
@@ -126,14 +128,8 @@ struct ARViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> ARView {
         
-        let arView = ARView(frame: .zero)
+        let arView = CustomARView(frame: .zero)
         
-        // create AR tracking config
-        let config = ARWorldTrackingConfiguration()
-        config.planeDetection = [.horizontal, .vertical]
-        config.environmentTexturing = .automatic
-        
-        arView.session.run(config)
         
         return arView
         
@@ -171,6 +167,46 @@ struct ARViewContainer: UIViewRepresentable {
         }
     }
     
+}
+
+
+// create custom AR view using the Focus Entity package
+class CustomARView: ARView{
+    var focusSquare: FocusEntity?
+    
+    required init(frame frameRect: CGRect) {
+        super.init(frame: frameRect)
+        
+//        focusSquare.delegate = self
+//        focusSquare.setAutoUpdate(to: true)
+        self.setupARView()
+        self.focusSquare = FocusEntity(on: self, focus: .classic)
+    }
+    
+    @MainActor required dynamic init?(coder decoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+
+    func setupARView() {
+        // create AR tracking config
+        let config = ARWorldTrackingConfiguration()
+        config.planeDetection = [.horizontal, .vertical]
+        config.environmentTexturing = .automatic
+        
+        self.session.run(config)
+    }
+}
+
+
+extension CustomARView: FocusEntityDelegate{
+    func toTrackingState() {
+        print("tracking")
+    }
+    
+    func toInitializingState() {
+        print("initialising")
+    }
 }
 
 #if DEBUG
